@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shopping-cart">
+            <a href="#">← Continue Shopping</a>
+            <div class="header">
+                <h3>Shopping Cart</h3>
+                <div class="sort-by">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="price">Price</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-item" id="item1">
+                <img src="https://via.placeholder.com/50" alt="OnePlus 7T Pro">
+                <div>
+                    <p>OnePlus 7T Pro</p>
+                    <p>256 GB, Nebula Blue</p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" readonly>
+                    <button>+</button>
+                </div>
+                <span>$799.00</span>
+                <button class="delete-button">🗑️</button>
+            </div>
+            <div class="cart-item" id="item2">
+                <img src="https://via.placeholder.com/50" alt="Google Pixel 4 XL">
+                <div>
+                    <p>Google Pixel 4 XL</p>
+                    <p>128 GB, Just Black</p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" readonly>
+                    <button>+</button>
+                </div>
+                <span>$899.00</span>
+                <button class="delete-button">🗑️</button>
+            </div>
+            <div class="cart-item" id="item3">
+                <img src="https://via.placeholder.com/50" alt="Samsung Galaxy Note 10">
+                <div>
+                    <p>Samsung Galaxy Note 10</p>
+                    <p>256 GB, Aura Glow</p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" readonly>
+                    <button>+</button>
+                </div>
+                <span>$1000.00</span>
+                <button class="delete-button">🗑️</button>
+            </div>
+            <div class="cart-item" id="item">
+                <img src="https://via.placeholder.com/50" alt="iPhone 11 Pro">
+                <div>
+                    <p>iPhone 11 Pro</p>
+                    <p>256 GB, Space Grey</p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" readonly>
+                    <button>+</button>
+                </div>
+                <span>$1100.00</span>
+                <button class="delete-button">🗑️</button>
+            </div>
+        </div>
+        <div class="card-details">
+            <h3>Card Details</h3>
+            <div class="payment-options">
+                <input type="radio" id="visa" name="payment" value="visa">
+                <label for="visa"><img src="./img/visa.png" alt="Visa"></label>
+                
+                <input type="radio" id="mastercard" name="payment" value="mastercard">
+                <label for="mastercard"><img src="./img/mastercard.png" alt="MasterCard"></label>
+                
+                <input type="radio" id="amex" name="payment" value="amex">
+                <label for="amex"><img src="./img/Amex.png" alt="American Express"></label>
+                
+                <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal"><img src="./img/PayPal.svg.png" alt="PayPal"></label>
+            </div>
+            <input type="text" placeholder="Name on Card">
+            <input type="text" placeholder="Card Number">
+            <div class="total">
+                <input type="text" placeholder="Expiration Date">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div class="total">
+                <span>Subtotal:</span>
+                <span>$3798.00</span>
+            </div>
+            <div class="total">
+                <span>Shipping:</span>
+                <span>$20.00</span>
+            </div>
+            <div class="tat total">
+                <span>Total (tax incl.):</span>
+                <span>$3818.00</span>
+            </div>
+            <button>Checkout</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
